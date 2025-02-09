@@ -1,7 +1,7 @@
 package runner
 
-import tdl.client.queue.ImplementationRunnerConfig
-import tdl.client.runner.ChallengeSessionConfig
+import io.accelerate.client.queue.ImplementationRunnerConfig
+import io.accelerate.client.runner.ChallengeSessionConfig
 import runner.CredentialsConfigFile.readFromConfigFile
 
 object Utils {

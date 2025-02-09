@@ -1,6 +1,6 @@
 package runner
 
-import tdl.client.runner.ActionProvider
+import io.accelerate.client.runner.ActionProvider
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader

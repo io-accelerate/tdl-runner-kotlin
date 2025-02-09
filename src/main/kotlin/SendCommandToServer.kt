@@ -1,6 +1,6 @@
 import runner.UserInputAction
-import tdl.client.queue.QueueBasedImplementationRunner
-import tdl.client.runner.ChallengeSession
+import io.accelerate.client.queue.QueueBasedImplementationRunner
+import io.accelerate.client.runner.ChallengeSession
 import runner.Utils.getConfig
 import runner.Utils.getRunnerConfig
 

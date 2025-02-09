@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.20"
+    kotlin("jvm") version "2.0.21"
     application
     jacoco
 }
@@ -7,7 +7,7 @@ plugins {
 version = project.version.toString()
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 application {
@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("ro.ghionoiu:tdl-client-java:0.26.5")
+    implementation("io.accelerate:tdl-client-java:0.27.0")
     implementation("com.google.code.gson:gson:2.8.9")
 
     testImplementation(kotlin("test"))
