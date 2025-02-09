@@ -3,7 +3,7 @@
 
 ## 1. Requirements
 
-- `JVM 17`
+- `JVM 21`
 
 ## 2. How to start
 
