@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.accelerate:tdl-client-java:0.27.0")
+    implementation("io.accelerate:tdl-client-java:0.28.0")
     implementation("com.google.code.gson:gson:2.8.9")
 
     testImplementation(kotlin("test"))

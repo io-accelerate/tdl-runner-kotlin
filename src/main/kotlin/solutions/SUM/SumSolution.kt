@@ -1,6 +1,6 @@
 package solutions.SUM
 
-object SumSolution {
+class SumSolution {
     fun sum(x: Int, y: Int): Int {
         TODO("Solution not implemented")
     }

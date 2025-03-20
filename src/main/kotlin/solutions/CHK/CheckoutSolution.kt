@@ -1,6 +1,6 @@
 package solutions.CHK
 
-object CheckoutSolution {
+class CheckoutSolution {
     fun checkout(skus: String): Int {
         TODO("Solution not implemented")
     }

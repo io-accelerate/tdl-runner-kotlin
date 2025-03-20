@@ -1,6 +1,6 @@
 package solutions.HLO
 
-object HelloSolution {
+class HelloSolution {
     fun hello(friendName: String): String {
         TODO("Solution not implemented")
     }

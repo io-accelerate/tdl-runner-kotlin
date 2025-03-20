@@ -1,6 +1,6 @@
 package solutions.FIZ
 
-object FizzBuzzSolution {
+class FizzBuzzSolution {
     fun fizzBuzz(number: Int): String  {
         TODO("Solution not implemented")
     }
