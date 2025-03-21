@@ -20,8 +20,8 @@ repositories {
 }
 
 dependencies {
-    implementation("io.accelerate:tdl-client-java:0.28.0")
-    implementation("com.google.code.gson:gson:2.8.9")
+    implementation("io.accelerate:tdl-client-java:0.28.1")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.3")
 
     testImplementation(kotlin("test"))
 }

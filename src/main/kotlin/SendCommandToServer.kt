@@ -3,7 +3,7 @@ import io.accelerate.client.queue.QueueBasedImplementationRunner
 import io.accelerate.client.runner.ChallengeSession
 import runner.Utils.getConfig
 import runner.Utils.getRunnerConfig
-
+import com.fasterxml.jackson.module.kotlin.KotlinModule
 /**
  * ~~~~~~~~~~ Running the system: ~~~~~~~~~~~~~
  *
@@ -66,6 +66,7 @@ fun main(args: Array<String>) {
         .withSolutionFor("inventory_size", entry::inventorySize)
         .withSolutionFor("inventory_get", entry::inventoryGet)
         .withSolutionFor("waves", entry::waves)
+        .withJacksonModule(KotlinModule.Builder().build())
         .create()
 
     ChallengeSession.forRunner(runner)
