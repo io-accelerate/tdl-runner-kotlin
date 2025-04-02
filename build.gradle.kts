@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.accelerate:tdl-client-java:0.28.2")
+    implementation("io.accelerate:tdl-client-java:0.29.1")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.3")
 
     testImplementation(kotlin("test"))
