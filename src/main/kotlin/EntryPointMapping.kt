@@ -4,14 +4,15 @@ import solutions.SUM.SumSolution
 import solutions.HLO.HelloSolution
 import solutions.FIZ.FizzBuzzSolution
 import solutions.CHK.CheckoutSolution
+import solutions.RBT.RabbitHoleSolution
 import solutions.DMO.*
-
 
 class EntryPointMapping {
     private val sumSolution = SumSolution()
     private val helloSolution = HelloSolution()
     private val fizzBuzzSolution = FizzBuzzSolution()
     private val checkoutSolution = CheckoutSolution()
+    private val rabbitHoleSolution = RabbitHoleSolution()
     private val demoRound1Solution = DemoRound1Solution()
     private val demoRound2Solution = DemoRound2Solution()
     private val demoRound3Solution = DemoRound3Solution()
@@ -31,6 +32,15 @@ class EntryPointMapping {
 
     fun checkout(p: List<ParamAccessor>): Any? {
         return checkoutSolution.checkout(p[0].asString)
+    }
+
+    fun rabbitHole(p: List<ParamAccessor>): Any? {
+        return rabbitHoleSolution.rabbitHole(
+            p[0].asInteger,
+            p[1].asInteger,
+            p[2].asString,
+            p[3].getAsMapOf(String::class.java),
+        )
     }
 
     // Demo Round 1
