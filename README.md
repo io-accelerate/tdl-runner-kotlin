@@ -7,7 +7,7 @@
 
 ## 2. How to start
 
-- Open `src/main/kotlin/SendCommandToServer.kt`
+- Open `src/main/kotlin/SendCommandToServer.kt` in your favorite IDE
 - Read the comments as documentation, they will guide through the rest of the setup
 
 
