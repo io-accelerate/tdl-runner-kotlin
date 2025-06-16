@@ -5,6 +5,8 @@ import solutions.HLO.HelloSolution
 import solutions.FIZ.FizzBuzzSolution
 import solutions.CHK.CheckoutSolution
 import solutions.RBT.RabbitHoleSolution
+import solutions.AMZ.AmazingSolution
+import solutions.ULT.UltimateSolution
 import solutions.DMO.*
 
 class EntryPointMapping {
@@ -13,6 +15,8 @@ class EntryPointMapping {
     private val fizzBuzzSolution = FizzBuzzSolution()
     private val checkoutSolution = CheckoutSolution()
     private val rabbitHoleSolution = RabbitHoleSolution()
+    private val amazingSolution = AmazingSolution()
+    private val ultimateSolution = UltimateSolution()
     private val demoRound1Solution = DemoRound1Solution()
     private val demoRound2Solution = DemoRound2Solution()
     private val demoRound3Solution = DemoRound3Solution()
@@ -43,6 +47,22 @@ class EntryPointMapping {
         )
     }
 
+    fun amazingMaze(p: List<ParamAccessor>): Any? {
+        return amazingSolution.amazingMaze(
+            p[0].asInteger,
+            p[1].asInteger,
+            p[2].getAsMapOf(String::class.java),
+        )
+    }
+
+    fun ultimateMaze(p: List<ParamAccessor>): Any? {
+        return ultimateSolution.ultimateMaze(
+            p[0].asInteger,
+            p[1].asInteger,
+            p[2].getAsMapOf(String::class.java),
+        )
+    }
+    
     // Demo Round 1
 
     fun increment(p: List<ParamAccessor>): Any? {
