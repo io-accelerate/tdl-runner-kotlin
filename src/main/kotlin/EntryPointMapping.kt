@@ -5,6 +5,7 @@ import solutions.HLO.HelloSolution
 import solutions.FIZ.FizzBuzzSolution
 import solutions.CHK.CheckoutSolution
 import solutions.RBT.RabbitHoleSolution
+import solutions.HOC.HouseOfCardsSolution
 import solutions.AMZ.AmazingSolution
 import solutions.ULT.UltimateSolution
 import solutions.DMO.*
@@ -15,6 +16,7 @@ class EntryPointMapping {
     private val fizzBuzzSolution = FizzBuzzSolution()
     private val checkoutSolution = CheckoutSolution()
     private val rabbitHoleSolution = RabbitHoleSolution()
+    private val houseOfCardsSolution = HouseOfCardsSolution()
     private val amazingSolution = AmazingSolution()
     private val ultimateSolution = UltimateSolution()
     private val demoRound1Solution = DemoRound1Solution()
@@ -44,6 +46,13 @@ class EntryPointMapping {
             p[1].asInteger,
             p[2].asString,
             p[3].getAsMapOf(String::class.java),
+        )
+    }
+
+    fun renderHouse(p: List<ParamAccessor>): Any? {
+        return houseOfCardsSolution.renderHouse(
+            p[0].asString,
+            p[1].getAsMapOf(String::class.java),
         )
     }
 
